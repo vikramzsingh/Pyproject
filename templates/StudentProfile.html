@@ -1,0 +1,58 @@
+{% extends 'StudentHomeTemp.html' %}
+
+{% block m1 %}
+
+{% if photo=="no" %}
+    <form name="form1" id="form1" method="post" action="uploadstudentphoto" enctype="multipart/form-data">
+    <p>
+        Upload Photo:-<input type="file" name="F1"/>
+    </p>
+    <p>
+        <input type="submit" value="Upload" name="B1"/>
+    </p>
+</form>
+{% else %}
+    <img style="border-radius:70px 70px 70px 70px;" src="../static/photos/{{photo}}" alt="no photo found" class="img img-thumbnail" width="140" height="150"/>
+{% endif %}
+<p></p>
+{% if data %}
+<table class="table table-bordered table-hover">
+<tr>
+    <th colspan="2" class="text-center table-active">Student details</th>
+</tr>
+    <tr>
+        <th>Name</th>
+        <td>{{data[0]}}</td>
+    </tr>
+    <tr>
+        <th>Roll Nunmber</th>
+        <td>{{data[1]}}</td>
+    </tr>
+    <tr>
+        <th>Branch</th>
+        <td>{{data[2]}}</td>
+    </tr>
+    <tr>
+        <th>Year</th>
+        <td>{{data[3]}}</td>
+    </tr>
+    <tr>
+        <th>Address</th>
+        <td>{{data[4]}}</td>
+    </tr>
+    <tr>
+        <th>Mobile Number</th>
+        <td>{{data[5]}}</td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td>{{data[6]}}</td>
+    </tr>
+    </table>
+<form class="from-group" method="post" action="editstudent">
+    <input type="hidden" name="H1" value="{{data[6]}}"/>
+    <input class="form-control btn btn-primary" type="submit" value="Edit" name="B1"/>
+</form>
+{% endif %}
+
+{% endblock %}

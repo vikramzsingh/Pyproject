@@ -1,0 +1,43 @@
+{% extends 'StudentHomeTemp.html' %}
+
+{% block m1 %}
+
+{% if data %}
+<table class="table table-bordered table-hover">
+    <tr>
+        <th colspan="2" class="text-center table-active">Payment Details</th>
+    </tr>
+
+    <tr>
+        <th>Name</th>
+        <td>{{data[0]}}</td>
+    </tr>
+
+    <tr>
+        <th>Roll Number</th>
+        <td>{{data[1]}}</td>
+    </tr>
+
+    <tr>
+        <th>Branch</th>
+        <td>{{data[2]}}</td>
+    </tr>
+
+    <tr>
+        <th>Amount paid</th>
+        <td>{{data[5]}}</td>
+    </tr>
+
+    <tr>
+        <th>Transfered by</th>
+        <td>{{data[6]}}</td>
+    </tr>
+</table>
+
+    {% if msg %}
+        <h3>{{msg}}</h3>
+    {% endif %}
+
+{% endif %}
+
+{% endblock %}

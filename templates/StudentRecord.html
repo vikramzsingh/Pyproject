@@ -1,0 +1,28 @@
+{% extends 'AdminHomeTemp.html' %}
+{% block m1 %}
+    <table class="table table-bordered table-hover mt-2">
+        <tr class="bg-primary">
+            <th colspan="4" class="text-center">Student Fees Record</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Roll No.</th>
+            <th>Branch</th>
+            <th>Amount</th>
+        </tr>
+        {% if data %}
+        {% for k in data %}
+        <tr>
+            <td>{{k[0]}}</td>
+            <td>{{k[1]}}</td>
+            <td>{{k[2]}}</td>
+            <td>{{k[5]}}</td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+    </table>
+{% if msg %}
+    {{msg}}
+{% endif %}
+
+{% endblock %}

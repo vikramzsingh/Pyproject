@@ -1,0 +1,16 @@
+{% extends 'StudentHomeTemp.html' %}
+
+{% block m1 %}
+<form class="form-group" name="form1" method="post" action="uploadquestionstudent1">
+    	<p>
+        	<h3>Upload Question:</h3>
+        	<textarea class="form-control" placeholder="Enter your Question" rows="5" cols="28" name="T1"></textarea>
+        </p>
+		<p>
+			subject:<input placeholder="Enter Subject" class="form-control" type="text" name="T2"/>
+		</p>
+        <p>
+        	<input type="submit" class="form-control bg-success text-white" name="B1" id="B1" value="Upload">
+        </p>
+</form>
+{% endblock %}

@@ -1,0 +1,13 @@
+<h1>tester</h1>
+
+
+    {% if data %}
+        {% for k in data %}
+            <p>Question:{{k[1]}}</p>
+            {% if data1 %}
+                {% for j in data1 %}
+                    <p>Solution:{{j[2]}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}

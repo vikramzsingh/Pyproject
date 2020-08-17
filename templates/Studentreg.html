@@ -1,0 +1,23 @@
+{% extends 'StudentRegHtml.html' %}
+
+{% block m1 %}
+<h1 style="text-shadow:2px 2px 2px green; word-spacing:2px; letter-spacing:3px;" class="text-primary mt-2"><center>Student Registration Form</center></h1>
+    	<p></p>
+		<form class="form-group" onSubmit="return A(this)" id="form1" name="form1" method="post" action="studentreg">
+			<p><label for="Name">Name</label><input class="form-control" id="T1" name="T1" type="text" placeholder="Enter Your Name" /></p>
+			<p><label for="Roll No.">Roll No.</label><input class="form-control" id="T2" name="T2" type="text" placeholder="Enter Your Roll No." /></p>
+			<p><label for="Branch">Branch</label><input class="form-control" id="T3" name="T3" type="text" placeholder="Enter Your Branch" /></p>
+			<p><label for="Year">Year</label><input class="form-control" id="T4" name="T4" type="text" placeholder="Enter Your Name" /></p>
+			<p><label for="Address">Address</label><input class="form-control" id="T5" name="T5" type="text" placeholder="Enter Your Address" /></p>
+			<p><label for="Mobile No.">Mobile No.</label><input class="form-control" id="T6" name="T6" type="text" placeholder="Enter Your Mobile No." /></p>
+			<p><label for="Email">Email</label><input class="form-control" id="T7" name="T7" type="email" placeholder="Enter Your Email" /></p>
+			<p><label for="Password">Password</label><input class="form-control" id="T8" name="T8" type="text" placeholder="Enter Password" /></p>
+			<p><label for="Confirm Password">Confirm Password</label><input class="form-control" id="T9" name="T9" type="text" placeholder="Confirm Password" /></p>
+			<input class="btn btn-block btn-success" type=submit value="Register" /></td>
+          </form>
+		{% if msg %}
+			<h1 style="color:#000; text-shadow:2px 2px 2px green; word-spacing:2px; letter-spacing:3px;">{{msg}}</h1>
+		{% endif %}
+<hr>
+<a class="btn btn-block btn-primary" href="adminreg">Click for Admin Registration</a>
+{% endblock %}

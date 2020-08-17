@@ -1,0 +1,18 @@
+{% extends 'StudentHomeTemp.html' %}
+
+{% block m1 %}
+
+<h1 style="text-shadow:2px 2px 2px green; word-spacing:2px; letter-spacing:3px;" class="text-primary mt-2"><center>Pay Fees</center></h1>
+    	<p></p>
+		<form class="form-group" id="form1" name="form1" method="post" action="payfees1">
+			<p><label for="Name">Name</label><input class="form-control" id="T1" name="T1" type="text" placeholder="Enter Your Name" /></p>
+			<p><label for="Roll Number">Roll Number</label><input class="form-control" id="T2" name="T2" type="text" placeholder="Enter Your Roll No." /></p>
+			<p><label for="Branch">Branch</label><input class="form-control" id="T3" name="T3" type="text" placeholder="Enter the Branch" /></p>
+			<p><label for="Mobile No.">Mobile No.</label><input class="form-control" id="T4" name="T4" type="text" placeholder="Enter Your Mobile No." /></p>
+			<p><label for="Amount">Amount</label><input class="form-control" id="T5" name="T5" type="text" placeholder="Enter Amount" /></p>
+			<p><label for="Account Number">Account Number</label><input class="form-control" id="T6" name="T6" type="text" placeholder="Enter Your Account Number" /></p>
+            <p><label for="Trensfer To">Transfer To</label><input class="form-control" id="T7" name="T7" type="text" placeholder="Enter the Reciver Account Number" /></p>
+			<input class="btn btn-block btn-success" type=submit value="Pay" /></td>
+          </form>
+
+{% endblock %}

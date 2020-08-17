@@ -1,0 +1,297 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home</title>
+
+<script type="text/javascript" src="../static/scripts/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+<script type="text/javascript" src="../static/scripts/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="../static/font-awesome-master/css/font-awesome.css">
+
+    <script>
+	$(document).ready(function(e) {
+        $("#b1").click(function(e) {
+            $("#dd").slideToggle("linear");
+        });
+    });
+
+	$(document).ready(function(e) {
+        $("#bt1").click(function(e) {
+            $(".modal").show();
+        });
+    });
+
+	$(document).ready(function(e) {
+        $("#bt2").click(function(e) {
+            $(".modal").hide();
+        });
+    });
+
+	$(document).ready(function(e) {
+        $("#bt3").click(function(e) {
+            $(".modal").hide();
+        });
+    });
+</script>
+
+
+    <style>
+		/*.im{
+			min-height:200px;
+			width:100%;
+			background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(hello.png);
+			background-size:100% 100%;
+			border:1px solid #000;
+		} not used */
+		#nb{
+			border-bottom:1px solid #000;
+			}
+		.rd{
+			min-height:600px;
+			background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../static/images/fall.jpg);
+			background-size:100% 100%;
+
+			}
+		#bb{
+			height:600px;
+			padding:10px;
+			overflow:auto;
+			background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../static/images/road.jpg);
+			background-size:100% 100%;
+			box-sizing:border-box;
+			border-radius:40px 40px 40px 40px;
+			box-shadow:2px 2px 24px 12px #000000;
+			}
+
+		#b2{
+
+			margin-top:100px;
+			width:150px;
+			border-radius:15px 15px 15px 15px;
+			text-decoration:none;
+			}
+		#b3{
+			width:150px;
+			margin-top:100px;
+			border-radius:15px 15px 15px 15px;
+			text-decoration:none;
+			}
+
+
+		#bt2{
+	color:#F00;
+	border:1px solid #000;
+	box-shadow:1px 0px 1px 0px #000000;
+	}
+
+	#bt2:hover{
+			background:#F00;
+			color:#FFF;
+			}
+	</style>
+</head>
+
+<body>
+	<!--<div class="container-fluid bg-primary im" height=200px>
+    	 <div class="row">
+         	<div class="col col-md-10 col-sm-10 col-lg-10">
+            	<h1 class="display-1 mt-3" style="text-decoration:underline; color:#FFF;"><b><i>Acadamics</i></b></h1>
+            </div>
+            <div>
+           		<img class="logo" style="height:200px; width:auto; background-size:100% 100%;" src="logo.png"/>
+            </div>
+         </div>
+    </div>-->
+    <nav class="navbar bg-dark navbar-expand-md navbar-dark" id="nb">
+    <a class="navbar-brand text-warning">Acadamics</a>
+    	<button class="navbar-toggler" id="b1">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="dd">
+        	<ul class="navbar text-center navbar-nav mr-auto">
+               <li><a class="nav-link" href="/" style="font-size:18px;">Home</a></li>
+               <li><a class="nav-link" href="login" style="font-size:18px;">Login</a></li>
+               <li><a class="nav-link" href="about" style="font-size:18px;">About</a></li>
+               <li><a class="nav-link" href="#" style="font-size:18px;">Contact us</a></li>
+      		</ul>
+            <form class="form-inline">
+            	<input type="search" class="form-control"/>
+                <input type="submit" value="Search" class="btn btn-outline-light ml-1"/>
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid text-center rd">
+    <h1 style="color:#FA4805; text-shadow:2px 2px 2px black; font-size:40px; word-spacing:10px; letter-spacing:5px;"><b>Welcome To Academics</b></h1>
+    	<a href="#" class="btn btn-warning mt-2" id="bt1">Read More</a>
+        <div class="modal">
+        	<div class="modal-dialog">
+				<div class="modal-content">
+                	<div class="modal-header">
+                    	<h1>Header Title</h1><span class="fa fa-close" id="bt2"></span>
+                    </div>
+                	<div class="modal-body">
+                    	<h3>Whatever you like....put here</h3>
+                    </div>
+                    <div class="modal-footer">
+                    	<input type="button" value="cancel" class="btn btn-danger mt-2" id="bt3"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <p><a href="studentreg" class="btn btn-primary" id="b2">Sign up</a>
+        <a href="login" class="btn btn-primary" id="b3">Login</a></p>
+ 	</div>
+
+    <div class="container-fluid" >
+    	<div class="row active alert-success" style="height:50px;">
+        	<div class="col col-12 col-md-12 col-sm-12 col-lg-12" style=" text-align:center; margin-top:15px; box-shadow:2px 2px 0px 0px white;">
+            	<h3><i class="fa fa-mortar-board">&nbsp;&nbsp;Available Facilities in our institution&nbsp;&nbsp;<span class="fa fa-mortar-board"></span></i></h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid" >
+    	<div class="row active alert-success" style="height:100px;">
+        	<div class="col col-md-3 col-lg-3 col-sm-3" style="height:100px; box-shadow:4px 4px 0px 0px white;">
+            	<h3 style="margin-top:35px;"><i class="fa fa-university">&nbsp;&nbsp;Liberary</i></h3>
+            </div>
+            	<div class="col col-md-3 col-lg-3 col-sm-3" style="height:100px; box-shadow:4px 4px 0px 0px white;">
+            	<h3 ><i style="margin-top:35px;" class="fa fa-institution">&nbsp;&nbsp;Workshop</i></h3>
+            </div>
+            	<div class="col col-md-3 col-lg-3 col-sm-3" style="height:100px; box-shadow:4px 4px 0px 0px white;">
+            	<h3 style="margin-top:35px;"><i class="fa fa-laptop">&nbsp;&nbsp;Computer Labs</i></h3>
+            </div>
+            	<div class="col col-md-3 col-lg-3 col-sm-3" style="height:100px; box-shadow:4px 4px 0px 0px white;">
+            	<h3 style="margin-top:35px;"><i class="fa fa-gamepad">&nbsp;&nbsp;Sports</i></h3>
+            </div>
+        </div>
+    </div>
+
+   <div class="container bg-white mt-5">
+    	<div class="row" style="text-align:center;">
+        	<div class="col col-md-12">
+            	<h1 style="color:#79D7F7; text-shadow:3px 3px 2px #000000; font-family:Verdana, Geneva, sans-serif"><b>Galleries with</b></h1>
+                <h1 style="color:#79D7F7; text-shadow:3px 3px 2px #000000; font-family:Verdana, Geneva, sans-serif"><b>captions...</b></h1>
+            </div>
+        </div>
+ </div>
+
+
+    <div class="container bg-white mt-5">
+    	<div class="row">
+        	<div class="col col-md-3 col-lg-3 col-sm-3">
+            	<div class="">
+                	<img style="height:180px; box-shadow:2px 2px 4px 3px #000000; width:270px; position:relative; border-radius:100px 100px 100px 100px;" src="../static/images/road.jpg" class="card-img">
+
+                </div>
+            </div>
+            <div class="col col-md-3 col-lg-3 col-sm-3">
+            	<div class="">
+                	<img style="height:180px; width:270px; position:relative; box-shadow:2px 2px 4px 3px #000000; border-radius:100px 100px 100px 100px;" src="../static/images/books.jpg" class="card-img">
+
+                </div>
+            </div>
+            <div class="col col-md-3 col-lg-3 col-sm-3">
+            	<div class="">
+                	<img style="height:180px; width:270px; position:relative; box-shadow:2px 2px 4px 3px #000000; border-radius:100px 100px 100px 100px;" src="../static/images/library.jpg" class="card-img">
+
+                </div>
+            </div>
+            <div class="col col-md-3 col-lg-3 col-sm-3">
+            	<div class="">
+                	<img style="height:180px; width:270px; position:relative; box-shadow:2px 2px 4px 3px #000000; border-radius:100px 100px 100px 100px;" src="../static/images/fall.jpg" class="card-img">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-white mt-2">
+    	<div class="row">
+        	<div class="col col-md-3 col-lg-3 col-sm-3">
+            	<div class="">
+                	<img style="height:180px; width:270px; position:relative; box-shadow:2px 2px 4px 3px #000000; border-radius:100px 100px 100px 100px;" src="../static/images/handbook.jpg" class="card-img">
+
+                </div>
+            </div>
+            <div class="col col-md-3 col-lg-3 col-sm-3">
+            	<div class="">
+                	<img style="height:180px; width:270px; position:relative; box-shadow:2px 2px 4px 3px #000000; border-radius:100px 100px 100px 100px;" src="../static/images/manybooks.jpg" class="card-img">
+
+                </div>
+            </div>
+            <div class="col col-md-3 col-lg-3 col-sm-3">
+            	<div class="">
+                	<img style="height:180px; width:270px; position:relative; box-shadow:2px 2px 4px 3px #000000; border-radius:100px 100px 100px 100px;" src="../static/images/road.jpg" class="card-img">
+
+                </div>
+            </div>
+            <div class="col col-md-3 col-lg-3 col-sm-3">
+            	<div class="">
+                	<img style="height:180px; width:270px; position:relative; box-shadow:2px 2px 4px 3px #000000; border-radius:100px 100px 100px 100px;" src="../static/images/astronomy.jpg" class="card-img">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid bg-white mt-5">
+    	<div id="bb">
+            {% block m1 %}
+		    {% endblock %}
+        </div>
+    </div>
+
+   <div style="height:400px" class="container-fluid bg-white text-center">
+   		<div class="row">
+        	<div class="col col-md-4">
+            	</br>
+                </br>
+            	<h2>Copyright</h2>
+                </br>
+                </br>
+                </br>
+                <h3>Vikram Singh</h3>
+                <p>&copy;2020 Privacy policy</p>
+                <h3>
+                <span class="fa fa-facebook">&nbsp;&nbsp;</span>
+				<span class="fa fa-instagram">&nbsp;&nbsp;</span>
+                <span class="fa fa-wifi">&nbsp;&nbsp;</span>
+                <span class="fa fa-linkedin">&nbsp;&nbsp;</span>
+				<span class="fa fa-whatsapp">&nbsp;&nbsp;</span>
+                <h3>
+            </div>
+
+            <div style="text-align:justify;" class="col col-md-4">
+            	</br>
+                </br>
+            	<h2>About Us</h2>
+                </br>
+                </br>
+                </br>
+                <p style="text-align:justifys;">
+                	Upon the subject of education … I can only say that I view it as the most important subject which we as a people may be engaged in.Knowledge is power. Information is liberating. Education is the premise of progress, in every society, in every family.
+                </p>
+            </div>
+
+            <div  class="col col-md-4">
+            	</br>
+                </br>
+                <h2>Contact Us</h2>
+                </br>
+                </br>
+                </br>
+                <span style="font-size:2rem;" class="fa fa-mobile-phone">&nbsp;&nbsp;</span><span style="margin-bottom:5px;">phone  +91 0987654321</span>
+                <p></p>
+                <span style="font-size:2rem;" class="fa fa-tv">&nbsp;&nbsp;</span><span style="margin-bottom:5px;">www.xyz@vikram.com</span>
+                <p></p>
+                <span style="font-size:2rem;" class="fa fa-home">&nbsp;&nbsp;</span><span style="margin-bottom:5px;">Pathankot (Punjab)</span>
+
+            </div>
+        </div>
+   </div>
+    </body>
+</html>

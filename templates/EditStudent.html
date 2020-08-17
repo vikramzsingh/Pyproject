@@ -1,0 +1,48 @@
+{% extends 'StudentHomeTemp.html' %}
+
+{% block m1 %}
+
+{% if res %}
+<form class="from-group" method="post" action="editstudent1">
+<table class="table table-bordered table-hover">
+<tr>
+    <th colspan="2" class="text-center table-active">Student details</th>
+</tr>
+    <tr>
+        <th>Name</th>
+        <td><input type="text" readonly name="T1" id="T1" value="{{res[0]}}" /></td>
+    </tr>
+    <tr>
+        <th>Roll Nunmber</th>
+        <td><input readonly type="text" name="T2" id="T2" value="{{res[1]}}" /></td>
+    </tr>
+    <tr>
+        <th>Branch</th>
+        <td><input readonly type="text" name="T3" id="T3" value="{{res[2]}}" /></td>
+    </tr>
+    <tr>
+        <th>Year</th>
+        <td><input type="text" readonly name="T4" id="T4" value="{{res[3]}}" /></td>
+    </tr>
+    <tr>
+        <th>Address</th>
+        <td><input type="text" name="T5" id="T5" value="{{res[4]}}" /></td>
+    </tr>
+    <tr>
+        <th>Mobile Number</th>
+        <td><input type="text" name="T6" id="T6" value="{{res[5]}}" /></td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td><input readonly type="text" name="T7" id="T7" value="{{res[6]}}" /></td>
+    </tr>
+    </table>
+
+    <input class="form-control btn btn-primary" type="submit" value="Save" name="B1"/>
+</form>
+
+    {% elif msg %}
+<h2>{{msg}}</h2>
+
+{% endif %}
+{% endblock %}

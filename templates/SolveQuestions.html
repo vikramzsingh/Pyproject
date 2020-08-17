@@ -1,0 +1,23 @@
+{% extends 'StudentHomeTemp.html' %}
+
+{% block m1 %}
+<p></p>
+    {% if data %}
+        {% for k in data %}
+        <h3>Question:-{{k[1]}}</h3>
+        <p>
+            Subject:-{{k[3]}}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Date:-{{k[2]}}
+        </p>
+        <form method="post" action="uploadsolution1">
+            <input type="hidden" name="T1" value="{{k[0]}}" />
+            <input type="hidden" name="T2" value="{{k[4]}}" />
+            <input class="btn btn-success" type="submit" value="Solve" name="B1"/>
+        </form>
+        <hr>
+        {% endfor %}
+{% elif msg %}
+<h3>{{msg}}</h3>
+    {% endif %}
+{% endblock %}

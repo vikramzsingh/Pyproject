@@ -1,0 +1,147 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="../static/scripts/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+<script type="text/javascript" src="../static/scripts/jquery.js"></script>
+<script type="text/javascript" src="../static/scripts/vJavaScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/font-awesome-master/css/font-awesome.css">
+
+<script>
+	$(document).ready(function(e) {
+        $("#b1").click(function(e) {
+            $("#dd").slideToggle("linear");
+        });
+    });
+</script>
+
+
+    <style>
+
+		#nb{
+			border-bottom:1px solid #000;
+			}
+
+		#bb{
+			height:700px;
+			padding:10px;
+			overflow:auto;
+			box-sizing:border-box;
+			}
+
+		#b2{
+
+			margin-top:100px;
+			width:150px;
+			border-radius:15px 15px 15px 15px;
+			text-decoration:none;
+			}
+		#b3{
+			width:150px;
+			margin-top:100px;
+			border-radius:15px 15px 15px 15px;
+			text-decoration:none;
+			}
+	</style>
+    <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="../static/engine1/style.css" />
+<script type="text/javascript" src="../static/engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head>
+
+<body>
+	    <nav class="navbar bg-dark navbar-expand-md navbar-dark" id="nb">
+    <a class="navbar-brand text-warning">Acadamics</a>
+    	<button class="navbar-toggler" id="b1">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="dd">
+        	<ul class="navbar text-center navbar-nav mr-auto">
+               <li><a class="nav-link" href="/" style="font-size:18px;">Home</a></li>
+               <li><a class="nav-link" href="studentprofile" style="font-size:18px;">Profile</a></li>
+               <li><a class="nav-link" href="payfees" style="font-size:18px;">Pay Fees</a></li>
+               <li><a class="nav-link" href="logout" style="font-size:18px;">logout</a></li>
+      		</ul>
+            <form class="form-inline">
+            	<input type="search" class="form-control"/>
+                <input type="submit" value="Search" class="btn btn-outline-light ml-1"/>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+		{% block m1 %}
+		{% endblock %}
+    </div>
+<div class="container-fluid text-center mt-4 rd">
+   <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="../static/data1/images/image03.jpg" alt="image03" title="image03" id="wows1_0"/></li>
+		<li><img src="../static/data1/images/image01.jpg" alt="image01" title="image01" id="wows1_1"/></li>
+		<li><a href="http://wowslider.net"><img src="../static/data1/images/image04.jpg" alt="slider jquery" title="image04" id="wows1_2"/></a></li>
+		<li><img src="../static/data1/images/image02.jpg" alt="image02" title="image02" id="wows1_3"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="image03"><span><img src="../static/data1/tooltips/image03.jpg" alt="image03"/>1</span></a>
+		<a href="#" title="image01"><span><img src="../static/data1/tooltips/image01.jpg" alt="image01"/>2</span></a>
+		<a href="#" title="image04"><span><img src="../static/data1/tooltips/image04.jpg" alt="image04"/>3</span></a>
+		<a href="#" title="image02"><span><img src="../static/data1/tooltips/image02.jpg" alt="image02"/>4</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">javascript carousel</a> by WOWSlider.com v8.8</div>
+<div class="ws_shadow"></div>
+</div>
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+
+   <div style="height:400px" class="container-fluid bg-white text-center">
+   		<div class="row">
+        	<div class="col col-md-4">
+            	</br>
+                </br>
+            	<h2>Copyright</h2>
+                </br>
+                </br>
+                </br>
+                <h3>Vikram Singh</h3>
+                <p>&copy;2020 Privacy policy</p>
+                <h3>
+                <span class="fa fa-facebook">&nbsp;&nbsp;</span>
+				<span class="fa fa-instagram">&nbsp;&nbsp;</span>
+                <span class="fa fa-wifi">&nbsp;&nbsp;</span>
+                <span class="fa fa-linkedin">&nbsp;&nbsp;</span>
+				<span class="fa fa-whatsapp">&nbsp;&nbsp;</span>
+                <h3>
+            </div>
+
+            <div style="text-align:justify;" class="col col-md-4">
+            	</br>
+                </br>
+            	<h2>About Us</h2>
+                </br>
+                </br>
+                </br>
+                <p style="text-align:justifys;">
+                	Upon the subject of education … I can only say that I view it as the most important subject which we as a people may be engaged in.Knowledge is power. Information is liberating. Education is the premise of progress, in every society, in every family.
+                </p>
+            </div>
+
+            <div  class="col col-md-4">
+            	</br>
+                </br>
+                <h2>Contact Us</h2>
+                </br>
+                </br>
+                </br>
+                <span style="font-size:2rem;" class="fa fa-mobile-phone">&nbsp;&nbsp;</span><span style="margin-bottom:5px;">phone  +91 09876544321</span>
+                <p></p>
+                <span style="font-size:2rem;" class="fa fa-tv">&nbsp;&nbsp;</span><span style="margin-bottom:5px;">www.xyz@vikram.com</span>
+                <p></p>
+                <span style="font-size:2rem;" class="fa fa-home">&nbsp;&nbsp;</span><span style="margin-bottom:5px;">Pathankot (Punjab)</span>
+
+            </div>
+        </div>
+   </div>
+    </body>
+</html>

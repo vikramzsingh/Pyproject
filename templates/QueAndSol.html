@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block m1 %}
+    {% if data %}
+        {% for k in data %}
+            <table class="table">
+            <h4 class="text-primary fa fa-question" style="font-size:2rem; word-spacing:5px; text-shadow:2px 2px 2px yellow; letter-spacing:4px;"><b class="text-danger">Question:-</b>{{k[4]}}</h4>
+            <h5 style="color:white;"><i class="text-danger fa fa-direction">Answer:-</i>{{k[2]}}</h5>
+            <p style="color:white;"><b class="text-danger">Solved by:-</b><u style="letter-spacing:2px;">{{k[3]}}</u></p>
+            <hr>
+            </table>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
